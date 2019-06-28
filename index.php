@@ -5,7 +5,7 @@
 </div><div class="content">
 <div id="tutorial-body"><div id="tutorial"><h1>jQuery AJAX Inline CRUD com PHP</h1>
 <div class="demo-content">
-<script src="arquivos/jquery-2.js" type="text/javascript"></script>
+<script src="jquery-2.js" type="text/javascript"></script>
 <script>
 function createNew() {
 	$("#add-more").hide();
