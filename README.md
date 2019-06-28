@@ -7,5 +7,3 @@ Para adicionar um novo registro, adicione uma nova linha de tabela, as colunas s
 
 Usei o jQuery append para adicioná-la às linhas existentes. Defini a propriedade “contenteditable” como 
 true para permitir que a coluna da tabela seja editável.         
-
-
