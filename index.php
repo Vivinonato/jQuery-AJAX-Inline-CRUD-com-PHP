@@ -3,10 +3,11 @@
 <title>jQuery AJAX Inline CRUD com PHP - Viviane Nonato</title>
 
 </div><div class="content">
-<div id="tutorial-body"><div id="tutorial"><h1>jQuery AJAX Inline CRUD com PHP</h1>
+<div id="tutorial-body"><div id="tutorial">
 <div class="demo-content">
 <script src="jquery-2.js" type="text/javascript"></script>
 <script>
+
 function createNew() {
 	$("#add-more").hide();
 	var data = '<tr class="table-row" id="new_row_ajax">' +
@@ -50,17 +51,27 @@ function deleteRecord(id) {
 }
 </script>
 
-<style>
-.tbl-qa{width: 98%;font-size:0.9em;background-color: #f5f5f5;}
-.tbl-qa th.table-header {padding: 5px;text-align: left;padding:10px;}
-.tbl-qa .table-row td {padding:10px;background-color: #FDFDFD;}
+<head>
+    <!-- BootstrapCDN e Ajax-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css"> 
+    <style type="text/css">    
+.tbl-qa{width: 98%;font-size:0.9em;border-bottom: 5px solid #D5D5D5;}
+.tbl-qa th.table-header {margin-top: 80px;padding: 10px; text-align: left;padding:12px;border-bottom: 5px solid #D5D5D5;}
+.tbl-qa .table-row td { height: 2px;padding:10px;border-bottom: 1px solid #D5D5D5;}
 .ajax-action-links {color: #09F; margin: 10px 0px;cursor:pointer;}
-.ajax-action-button {border:#09F 1px solid;color: #09F; margin: 10px 0px;cursor:pointer;display: inline-block;padding: 5px 20px;}
-</style>
-
-<!-- Ajax poll code ends -->
+.ajax-action-button { border:2px solid #D5D5D5; margin: 10px 1px;cursor:pointer;display: inline-block;padding: 10px 20px;}
+.margin-top-md{margin-top: 80px;}
+    </style>
+</head>
+<body>                       
+            
+<!-- Final do Ajax poll code  -->
+<div class="container">    
+        <div class="margin-top-md"> 
 
 <table class="tbl-qa">
+<h1>jQuery AJAX Inline CRUD com PHP </h1>
+
   <thead>
 	<tr>
 	  <th class="table-header">Nome</th>
@@ -86,7 +97,7 @@ function deleteRecord(id) {
 	  </tr>
   </tbody>
 </table>
-<div class="ajax-action-button" id="add-more" onclick="createNew();" style="display: inline-block;">Adicionar mais emails</div>
+<div class="ajax-action-button" id="add-more" onclick="createNew();" style="display: inline-block;">Adicionar mais Emails</div>
 
 </div>
 
