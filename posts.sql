@@ -1,5 +1,5 @@
 --
--- Table structure for table `posts`
+-- Table estrutura para table `posts`
 --
 
 CREATE TABLE IF NOT EXISTS `posts` (
@@ -9,6 +9,4 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `post_at` date DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `posts`
---
+
